@@ -28,11 +28,6 @@ public class Java_Login_System {
 			System.out.println("Login Fail");
 		}
 		
-		
-		
-		
-		
-	
 	        }
 	}
 	
