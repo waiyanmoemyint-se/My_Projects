@@ -1,0 +1,18 @@
+from twilio.rest import Client
+import random
+
+accountSSID  = "ACb2bf036c26cd2ddbbe897eff5d55df7b"
+authToken    = "e98cc863494b918565273562220dabdf"
+myClient     = Client(accountSSID,authToken)
+
+generate_OTP = random.randint(100000,923231212)
+message      = "Deare User OTP is : " + str(generate_OTP)
+OTP          = myClient.messages.create(
+    from_= "+18047350461",
+    body   = message,
+    to    = "+9509764599920"
+
+
+)
+print(OTP.sid)
+print(message)
