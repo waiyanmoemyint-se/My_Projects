@@ -1,0 +1,14 @@
+def scorePredictorRunrate():
+    total_over = int(input("Enter a run total over number"))
+    current_over = int(input("Enter a run current over number"))
+    current_score = int(input("Enter a run current score number"))
+
+    run_Rate = current_score/current_over
+    scorePredictor =  run_Rate*total_over
+
+    print("\n_____________________________-")
+    print("Run rate is",round(run_Rate,2))
+    print("Predicted score is",round(scorePredictor))
+    print("\n______________________________")
+
+scorePredictorRunrate()
